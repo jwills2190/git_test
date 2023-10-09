@@ -1,2 +1,3 @@
-# git_test
-Learning Git and Github
+# Demo
+
+Test for learning to use git and github
