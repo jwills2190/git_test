@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Fundamentals</title>
+	<style>
+		body {
+			background-color: #555;
+		}
+
+		.container {
+			margin: 30px auto;
+			height: 40vh;
+			width: 500px;
+			padding: 30px;
+			font-family: sans-serif;
+			text-align: center;
+			background-color: #eee;
+		}
+
+	</style>
+	<script>
+		// this is the creation of the variable. let is variable declaration key word. Equal sign is the assignment.Value is what's after the assignment. 
+		// backslash escapes (ignores) interior quotes so that they do not conflict with string quotes.
+		// Primitive Variables: Can only store ONE value at a time.
+		// The main types are: string, number, boolean, and undefined.
+
+		let myMessage = "Hello World!"; 
+		// make it a practice to comment out lines of code versus deleting them.
+		// alert(myMessage);
+		// typeof(msg) returns datatype of message, which is string in this case.
+		console.log(myMessage, typeof(myMessage)); //I'm fine (inline comment)
+
+		// declare a variable of dataype string:
+		let x = 5;
+		let y = 3.5;
+		console.log(x, y); // 5  3.5
+		console.log(x * y); //17.5
+		console.log(x / y); //1.4285714285714286
+		// js number datatype applies to integers and floats (decimals):
+		console.log("x:", x, typeof(x)); // x: 5 number
+		console.log("y:", y, typeof(y)); // y: 3.5 number
+		
+		// digits in quotes may look like numbers, but they are strings. 
+		let age = "21";
+		console.log("age:", age, typeof(age));
+		console.log(age + 3); //213. You can't do math with a string but the string will connect with the number. aka concatanation. 
+		// Number() method takes a string digit as its argument and return actual number version: Number("21") => 21.
+		console.log(Number(age) + 3); // 24
+		
+		// concatanation uses "+" to combine two or more variables into a string.
+		let firstName = "Joel";
+		let lastName = 'Williams';
+		let fullName = firstName + " " + lastName;
+		console.log(fullName);
+		// to add a space within a string, add an empty " " with a space in it.
+		
+		// make longer concatanation with strings and number
+		let highScore = 1200;
+		let greeting = "Welcome back, " + fullName + "! Your high score is " + highScore + ".";
+		console.log(greeting);
+		// From browser: Command-Shift-I is shortcut for opening console.
+
+		// Boolean datatype can only be true or false.
+		let online = true;
+		let loggedIn = false;
+		console.log("online:", online, typeof(online)); // online: true boolean
+		console.log("loggedIn:", loggedIn, typeof(loggedIn)); // loggedIn: false boolean
+		// flip or toggle a boolean with "!" to set the bool opposite of itself.
+		// ! is the NOT operator, so !online means NOT (or opposite) whatever online is.
+		// this way, you can flip a bool without having to know its current value.
+		online = !online;
+		loggedIn = !loggedIn;
+		console.log("online:", online, typeof(online)); // online: false boolean
+		console.log("loggedIn:", loggedIn, typeof(loggedIn)); // loggedIn: true boolean
+
+		// Error messages:
+		// let song = 'Won't Get Fooled Again'; // Erros: Unexpected identifier 't'
+		// console.log(song);
+
+		const DOZEN = 12;
+		console.log(DOZEN);
+
+		let DECADE = 10;
+		DECADE = 11;
+		console.log('DECADE:', DECADE);
+		// Okay to name CONSTS with all uppercase.
+		// common practice to write the name of the variable you're console logging.
+
+		// let cannot be redeclared but of course it can be changed and the change can even be to a different datatype.
+
+
+		age = 27;
+		console.log('age:', age, typeof(age)); // age: 27 number
+		age = "adult";
+		console.log('age:', age, typeof(age)); // age: adult string
+
+
+		let pswd;
+		console.log('pswd:', pswd, typeof(pswd)); // pswd: undefined undefined
+		// 4th datatype is undefined. 
+
+		// instead of undefined, if you don't know the value yet, but you do know the datatype, you can declare with a starter value: Empty "" for strings and 0 for numbers. 
+		let day = "";
+
+		testScore = 0;
+		finalGrade = "";
+
+
+	</script>
+
 </head>
 <body>
-    
+
+	<div class="container">
+
+		<h1>JavaScript Fundamentals</h1>
+
+	</div>
+
 </body>
 </html>
